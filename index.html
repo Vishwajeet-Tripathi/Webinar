@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Webinar Landing Page</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Unlock Your Potential with Webinars</h1>
+    <p>Join our interactive online webinar and transform your business</p>
+  </header>
+  <div class="registeration-form">
+  <section id="registration">
+    <h2 style="color:black;">Register Now</h2>
+    <form id="registrationForm" onsubmit="event.preventDefault(); submitForm();">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <button type="submit">Secure My Spot</button>
+    </form>
+    <p class="limited-seats">Hurry! Limited seats available.</p>
+  </section>
+  </div>
+  <section id="details">
+    <h2 style="color:Purple;">About the Webinar</h2>
+    <p>Join us on August 21th, 2023, for an immersive webinar experience designed to help you harness the true power of webinars. Discover proven strategies, expert insights, and practical tips to captivate your audience, generate leads, and grow your business.</p>
+    <p>Date: August 21, 2023</p>
+    <p>Time: 11:00 AM -01:30 PM</p>
+    <p>Duration: 2.5 hours</p>
+  </section>
+
+  <section id="agenda">
+    <h2>Agenda</h2>
+    <ul>
+      <li>
+        <h3 style="color:purple;">Session 1: The Art of Engaging Webinars (10:00 AM - 10:30 AM)</h3>
+        <p>Learn how to create impactful webinars that connect with your audience on a deeper level.</p>
+      </li>
+      <li>
+        <h3 style="color:Purple;">Session 2: Mastering Webinar Promotion (11:00 AM - 01:30 PM)</h3>
+        <p>Discover effective strategies to promote your webinars and attract a larger audience.</p>
+      </li>
+      <li>
+        <h3 style="color:purple;">Session 3: Advanced Webinar Techniques (11:00 AM - 01:30 PM)</h3>
+        <p>Explore advanced webinar techniques and best practices to elevate your presentations.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="speakers">
+    <h2 style="color: red;">Featured Speakers</h2>
+    <div class="speaker">
+      <img src="https://image.cnbcfm.com/api/v1/image/107037493-1648468879694-gettyimages-1239563765-AFP_32749PL.jpeg?v=1680870601" alt="Speaker 1">
+      <h3 style="color: black;">Tim Cook</h3>
+      <p>Founder & CEO, Company Apple</p>
+    </div>
+    <div class="speaker">
+      <img src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2021/04/06/968309-mark-zuckerberg-reuters.jpg" alt="Speaker 2">
+      <h3 style="color: black;">Mark Zuckerberg</h3>
+      <p>Marketing Director, Company Facebook</p>
+    </div>
+  </section>
+  
+  <section id="confirmation" class="hidden">
+    <div class="confirmation-content">
+      <h2 style="color: black;">Thank You for Registering!</h2>
+      <p>Your spot is confirmed for the webinar. We can't wait to inspire and empower you. Keep an eye on your inbox for further details and instructions.</p>
+      <!-- Share with Friends Section -->
+<div class="share-section">
+  <h3 style="color: black;">Share this Webinar with Friends</h3>
+  <p>Invite your friends and colleagues to join the webinar!</p>
+  
+  <!-- Social Media Sharing Buttons -->
+  <div class="social-buttons">
+    <button id="facebook-share-btn">Share on Facebook</button>
+    <button id="twitter-share-btn">Share on Twitter</button>
+    <button id="linkedin-share-btn">Share on LinkedIn</button>
+    <button id="whatsapp-share-btn">Share on WhatsApp</button>
+  </div>
+  
+  <!-- Email Sharing -->
+  <div class="email-share">
+    <input type="email" id="friend-email" placeholder="Enter friend's email">
+    <button id="send-email-btn">Send Invite</button>
+  </div>
+  
+  <!-- Referral Link -->
+  <div class="referral-link">
+    <p>Or copy and share this link:</p>
+    <input type="text" id="referral-link" readonly value="https://www.example.com/webinar?ref=your_unique_referral_code">
+    <button id="copy-link-btn">Copy Link</button>
+  </div>
+  
+  <!-- Referral Progress and Leaderboard -->
+  <div class="referral-progress">
+    <p>Your Referrals: <span id="referral-count">0</span></p>
+    <p>Leaderboard Rank: <span id="leaderboard-rank">#N/A</span></p>
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  <section id="thankyou" class="hidden">
+    <div class="thankyou-content">
+      <h2 style="color: black;">Thank You for Joining!</h2>
+      <p>Thank you for attending our webinar. We hope you found it valuable and gained insights to take your business to new heights. If you have any further questions, please don't hesitate to reach out to us.</p>
+      <div class="social-share">
+        <p>Share with your friends:</p><br>
+        <div class="share-buttons">
+          <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
